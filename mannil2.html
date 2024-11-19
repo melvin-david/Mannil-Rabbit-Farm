@@ -16,6 +16,18 @@
             color: white;
             padding: 15px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 110px;
+            width: auto;
+            margin-right: 20px;
+        }
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
         }
         .container {
             padding: 20px;
@@ -27,6 +39,14 @@
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: #007BFF; /* Link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         .breeds {
             display: flex;
@@ -61,27 +81,34 @@
 <body>
 
 <header>
-    <h1>Welcome to Mannil Rabbit Farm</h1>
-    <p>Your trusted place for high-quality rabbits!</p>
+    <img src="C:\Users\DELL\Desktop\New folder\mannil png.png" alt="Mannil Rabbit Farm Logo">
+    <div class="header-text">
+        <h1>Welcome to Mannil Rabbit Farm</h1>
+        <p>Your trusted place for high-quality rabbits!</p>
+    </div>
 </header>
 
 <div class="container">
     <div class="contact-info">
-        <h2>Contact Information</h2>
-        <p><strong>Phone:</strong> +91-9656164242</p>
-        <p><strong>Email:</strong> manilrabbitfarm2020@gmail.com</p>
+       <h2>Contact Information</h2>
+        <p><strong>Phone:</strong> 
+           <a href="tel:+919656164242">+91-9656164242</a> 
+        </p>
+        <p><strong>Email:</strong> 
+            <a href="mailto:manilrabbitfarm2020@gmail.com">manilrabbitfarm2020@gmail.com</a>
+        </p>
         <p><strong>Address:</strong> Thuppanad, Karimba, Palakkad, 678597</p>
     </div>
 
     <h2>Our Rabbit Breeds</h2>
     <div class="breeds">
         <div class="breed">
-            <img src="white_giant.jpg" alt="White Giant">
+            <img src="C:\Users\DELL\Desktop\New folder\pexels-molnartamasphotography-18157421.jpg" alt="White Giant">
             <h3>White Giant</h3>
             <p>Popular for meat and fur.</p>
         </div>
         <div class="breed">
-            <img src="big-chinchilla.jpg" alt="Soviet Chinchilla">
+            <img src="C:\Users\DELL\Desktop\New folder\big-chinchilla.jpg" alt="Soviet Chinchilla">
             <h3>Soviet Chinchilla</h3>
             <p>Distinctive with their black-and-white patterns.</p>
         </div>
